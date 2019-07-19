@@ -1,0 +1,10 @@
+name: consul
+title: Checking Consul installation
+maintainer: Martin Hristov
+summary: Checks with consul, consul-template and envconsul are installed
+copyright: None
+copyright_email: martinkrhristov@gmail.com
+license: MIT
+version: 1.0.0
+supports:
+  - os-family: linux
