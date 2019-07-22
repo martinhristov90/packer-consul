@@ -112,5 +112,6 @@ This repository's sole purpose is to demonstrate how to built a Vagrant box with
     ```
 - (optional) To upload the box to Vagrant Cloud use :
     ```
-    vagrant cloud publish
+    vagrant cloud publish (options)
     ```
+
