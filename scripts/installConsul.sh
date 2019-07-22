@@ -19,15 +19,15 @@ consul -autocomplete-install
 complete -C /usr/local/bin/consul consul
 
 # Adding consul user.
+# /opt/consul is going to be used as datadir for Consul.
 sudo useradd --system --home /etc/consul.d --shell /bin/false consul
 sudo mkdir --parents /opt/consul
 sudo chown --recursive consul:consul /opt/consul
 
 # Setting consul config and home dir
 sudo mkdir --parents /etc/consul.d
-sudo touch /etc/consul.d/consul.hcl
 sudo chown --recursive consul:consul /etc/consul.d
-sudo chmod 640 /etc/consul.d/consul.hcl
+
 
 # Integrating Consul as Systemd service.
 # Service is not enabled by default, going to be enabled in Vagrant.
@@ -39,7 +39,6 @@ Description="HashiCorp Consul - A service mesh solution"
 Documentation=https://www.consul.io/
 Requires=network-online.target
 After=network-online.target
-ConditionFileNotEmpty=/etc/consul.d/consul.hcl
 
 [Service]
 User=consul
