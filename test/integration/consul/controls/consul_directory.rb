@@ -7,12 +7,5 @@ control 'consul_directory' do
         its('owner') { should eq 'consul' }
         its('mode')  { should cmp '0755' }
     end
-
-    describe file('/etc/consul.d/consul.hcl') do
-        it { should exist }
-        its('owner') { should eq 'consul' }
-        its('mode')  { should cmp '0640' }
-        its('size')  { should eq 0 }
-      end
 end
     

@@ -112,5 +112,5 @@ This repository's sole purpose is to demonstrate how to built a Vagrant box with
     ```
 - (optional) To upload the box to Vagrant Cloud use :
     ```
-    vagrant cloud publish
+    vagrant cloud publish --box-version 0.0.3 --description "Base box with consul installed as Systemd service" --release --version-description "config.hcl file is removed" 
     ```
