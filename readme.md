@@ -95,10 +95,6 @@ This repository's sole purpose is to demonstrate how to built a Vagrant box with
          ✔  Directory /etc/consul.d/ should exist
          ✔  Directory /etc/consul.d/ owner should eq "consul"
          ✔  Directory /etc/consul.d/ mode should cmp == "0755"
-         ✔  File /etc/consul.d/consul.hcl should exist
-         ✔  File /etc/consul.d/consul.hcl owner should eq "consul"
-         ✔  File /etc/consul.d/consul.hcl mode should cmp == "0640"
-         ✔  File /etc/consul.d/consul.hcl size should eq 0
       ✔  consul_systemd: consul_check_systemd
          ✔  Service consul should be installed
          ✔  Service consul should not be enabled
