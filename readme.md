@@ -1,6 +1,6 @@
 # How to create a Vagrant base box with Consul installed as Systemd service and test it with KitchenCI.
 
-![alt diagram](https://www.lucidchart.com/publicSegments/view/9378ab4b-547c-487a-9021-bba06bd3876d/image.png)
+![alt diagram](https://www.lucidchart.com/publicSegments/view/c91dcce6-400d-4e55-ac5b-95b9285c8486/image.png)
 
 ## Purpose
 
@@ -114,3 +114,4 @@ This repository's sole purpose is to demonstrate how to built a Vagrant box with
     ```
     vagrant cloud publish (options)
     ```
+
